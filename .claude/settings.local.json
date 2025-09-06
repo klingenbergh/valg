@@ -8,7 +8,11 @@
       "Bash(npm:*)",
       "Bash(taskkill:*)",
       "Bash(curl:*)",
-      "Bash(sqlite3:*)"
+      "Bash(sqlite3:*)",
+      "WebSearch",
+      "mcp__fetch__fetch",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.pollofpolls.no)"
     ],
     "deny": [],
     "ask": []

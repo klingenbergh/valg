@@ -152,7 +152,8 @@ app.get('/api/polls', (req, res) => {
       // Set date range: from day after previous election to election day
       const startYear = prevElection?.prev_year ? prevElection.prev_year : electionYear - 4;
       const startDate = `${startYear}-09-15`; // Day after typical election day
-      const endDate = `${electionYear}-09-14`; // Day of election
+      // For 2025, include all future polls since we don't have an election date yet
+      const endDate = electionYear === 2025 ? '2025-12-31' : `${electionYear}-09-14`;
       
       // Get all polls in this date range
       db.all(

@@ -172,7 +172,7 @@ function createBlocBar(blocs, showSeats = false, includeOthers = true) {
 }
 
 // Global variables
-let currentYear = 2021;
+let currentYear = 2025;
 let pollChart = null;
 let currentPollIndex = 0;
 let allPolls = [];
@@ -184,6 +184,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearSelect = document.getElementById('yearSelect');
   const prevYearBtn = document.getElementById('prevYearBtn');
   const nextYearBtn = document.getElementById('nextYearBtn');
+  
+  // Set 2025 as default
+  currentYear = 2025;
+  if (yearSelect) {
+    yearSelect.value = '2025';
+  }
   
   yearSelect.addEventListener('change', (e) => {
     currentYear = parseInt(e.target.value);
@@ -198,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navigateToYear('next');
   });
   
-  // Load initial data
+  // Load initial data for 2025
   loadData();
 });
 
@@ -314,7 +320,12 @@ function updateYearSelector(years) {
 function displayResults(results) {
   if (!results || results.length === 0) {
     document.getElementById('resultsTable').innerHTML = '';
-    document.getElementById('resultsChart').innerHTML = '<p>No election results available for this year.</p>';
+    // Special message for 2025
+    if (currentYear === 2025) {
+      document.getElementById('resultsChart').innerHTML = '<div style="text-align: center; padding: 40px; color: #666;"><h3>2025 Election</h3><p>Election scheduled for September 2025</p><p>Results will be available after the election</p></div>';
+    } else {
+      document.getElementById('resultsChart').innerHTML = '<p>No election results available for this year.</p>';
+    }
     return;
   }
   
@@ -675,3 +686,4 @@ function updateFilterInfo() {
     filterInfo.innerHTML = '';
   }
 }
+
