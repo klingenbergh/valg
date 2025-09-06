@@ -306,11 +306,14 @@ function showError(message) {
 // Update year selector
 function updateYearSelector(years) {
   const yearSelect = document.getElementById('yearSelect');
-  const currentValue = yearSelect.value;
   
+  // Use the global currentYear instead of the select's current value
   yearSelect.innerHTML = years.map(year => 
-    `<option value="${year}" ${year == currentValue ? 'selected' : ''}>${year}</option>`
+    `<option value="${year}" ${year == currentYear ? 'selected' : ''}>${year}</option>`
   ).join('');
+  
+  // Make sure the select reflects the current year
+  yearSelect.value = currentYear;
   
   // Update navigation buttons
   updateYearNavigation(years);
@@ -318,11 +321,18 @@ function updateYearSelector(years) {
 
 // Display election results
 function displayResults(results) {
+  // Check if it's a placeholder result for 2025
+  if (results && results.length === 1 && results[0].party_id === 'PLACEHOLDER') {
+    document.getElementById('resultsTable').innerHTML = '';
+    document.getElementById('resultsChart').innerHTML = '<div style="text-align: center; padding: 40px; color: #666;"><h3>2025 Election</h3><p>Election scheduled for September 8, 2025</p><p>Results will be available Monday evening</p></div>';
+    return;
+  }
+  
   if (!results || results.length === 0) {
     document.getElementById('resultsTable').innerHTML = '';
     // Special message for 2025
     if (currentYear === 2025) {
-      document.getElementById('resultsChart').innerHTML = '<div style="text-align: center; padding: 40px; color: #666;"><h3>2025 Election</h3><p>Election scheduled for September 2025</p><p>Results will be available after the election</p></div>';
+      document.getElementById('resultsChart').innerHTML = '<div style="text-align: center; padding: 40px; color: #666;"><h3>2025 Election</h3><p>Election scheduled for September 8, 2025</p><p>Results will be available Monday evening</p></div>';
     } else {
       document.getElementById('resultsChart').innerHTML = '<p>No election results available for this year.</p>';
     }
