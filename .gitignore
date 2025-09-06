@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+
+# Builds
+/dist/
+/build/
+/.vite/
+/.turbo/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*.local
+
+# Editor
+.idea/
+.vscode/
+.DS_Store
+
+# Data & DB
+/data/*.db
+/data/*.sqlite
+/data/cache/
+/data/raw/
+
+# Coverage
+coverage/
+
+# Playwright
+/playwright-report/
+/test-results/
+
+# Misc
+*.sqlite-journal

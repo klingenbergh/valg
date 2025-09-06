@@ -1,0 +1,303 @@
+{
+  "results": {
+    "2009": [
+      {
+        "party_id": "Ap",
+        "pct": 35.4,
+        "seats": 64
+      },
+      {
+        "party_id": "FrP",
+        "pct": 22.9,
+        "seats": 41
+      },
+      {
+        "party_id": "H",
+        "pct": 17.2,
+        "seats": 30
+      },
+      {
+        "party_id": "SV",
+        "pct": 6.2,
+        "seats": 11
+      },
+      {
+        "party_id": "Sp",
+        "pct": 6.2,
+        "seats": 11
+      },
+      {
+        "party_id": "KrF",
+        "pct": 5.5,
+        "seats": 10
+      },
+      {
+        "party_id": "V",
+        "pct": 3.9,
+        "seats": 2
+      }
+    ],
+    "2013": [
+      {
+        "party_id": "H",
+        "pct": 26.8,
+        "seats": 48
+      },
+      {
+        "party_id": "Ap",
+        "pct": 30.8,
+        "seats": 55
+      },
+      {
+        "party_id": "FrP",
+        "pct": 16.3,
+        "seats": 29
+      },
+      {
+        "party_id": "KrF",
+        "pct": 5.6,
+        "seats": 10
+      },
+      {
+        "party_id": "Sp",
+        "pct": 5.5,
+        "seats": 10
+      },
+      {
+        "party_id": "V",
+        "pct": 5.2,
+        "seats": 9
+      },
+      {
+        "party_id": "SV",
+        "pct": 4.1,
+        "seats": 7
+      },
+      {
+        "party_id": "MDG",
+        "pct": 2.8,
+        "seats": 1
+      }
+    ],
+    "2017": [
+      {
+        "party_id": "Ap",
+        "pct": 27.4,
+        "seats": 49
+      },
+      {
+        "party_id": "H",
+        "pct": 25,
+        "seats": 45
+      },
+      {
+        "party_id": "FrP",
+        "pct": 15.2,
+        "seats": 27
+      },
+      {
+        "party_id": "Sp",
+        "pct": 10.3,
+        "seats": 19
+      },
+      {
+        "party_id": "SV",
+        "pct": 6,
+        "seats": 11
+      },
+      {
+        "party_id": "V",
+        "pct": 4.4,
+        "seats": 8
+      },
+      {
+        "party_id": "KrF",
+        "pct": 4.2,
+        "seats": 8
+      },
+      {
+        "party_id": "MDG",
+        "pct": 3.2,
+        "seats": 1
+      },
+      {
+        "party_id": "R",
+        "pct": 2.4,
+        "seats": 1
+      }
+    ],
+    "2021": [
+      {
+        "party_id": "Ap",
+        "pct": 26.3,
+        "seats": 48
+      },
+      {
+        "party_id": "H",
+        "pct": 20.4,
+        "seats": 36
+      },
+      {
+        "party_id": "Sp",
+        "pct": 13.5,
+        "seats": 28
+      },
+      {
+        "party_id": "FrP",
+        "pct": 11.6,
+        "seats": 21
+      },
+      {
+        "party_id": "SV",
+        "pct": 7.6,
+        "seats": 13
+      },
+      {
+        "party_id": "R",
+        "pct": 4.7,
+        "seats": 8
+      },
+      {
+        "party_id": "V",
+        "pct": 4.6,
+        "seats": 8
+      },
+      {
+        "party_id": "MDG",
+        "pct": 3.9,
+        "seats": 3
+      },
+      {
+        "party_id": "KrF",
+        "pct": 3.8,
+        "seats": 3
+      }
+    ]
+  },
+  "polls": {
+    "2017": [
+      {
+        "date": "2017-09-08",
+        "pollster": "Norstat",
+        "parties": {
+          "Ap": 27.5,
+          "H": 24.8,
+          "FrP": 15.3,
+          "Sp": 10.2,
+          "SV": 6.1,
+          "V": 4.3,
+          "KrF": 4.1,
+          "MDG": 3.3,
+          "R": 2.5
+        }
+      },
+      {
+        "date": "2017-09-06",
+        "pollster": "Opinion",
+        "parties": {
+          "Ap": 27.8,
+          "H": 24.5,
+          "FrP": 15.1,
+          "Sp": 10.4,
+          "SV": 5.9,
+          "V": 4.5,
+          "KrF": 4.3,
+          "MDG": 3.1,
+          "R": 2.3
+        }
+      },
+      {
+        "date": "2017-09-01",
+        "pollster": "Respons",
+        "parties": {
+          "Ap": 27.2,
+          "H": 25.1,
+          "FrP": 15.4,
+          "Sp": 10.1,
+          "SV": 6.2,
+          "V": 4.2,
+          "KrF": 4,
+          "MDG": 3.4,
+          "R": 2.4
+        }
+      }
+    ],
+    "2021": [
+      {
+        "date": "2021-09-10",
+        "pollster": "Norstat",
+        "parties": {
+          "Ap": 25.5,
+          "H": 20.1,
+          "Sp": 14.2,
+          "FrP": 11.3,
+          "SV": 8.1,
+          "R": 4.5,
+          "V": 4.3,
+          "MDG": 4.1,
+          "KrF": 3.9
+        }
+      },
+      {
+        "date": "2021-09-08",
+        "pollster": "Opinion",
+        "parties": {
+          "Ap": 26.1,
+          "H": 19.8,
+          "Sp": 13.9,
+          "FrP": 11.8,
+          "SV": 7.9,
+          "R": 4.8,
+          "V": 4.5,
+          "MDG": 3.8,
+          "KrF": 3.7
+        }
+      },
+      {
+        "date": "2021-09-05",
+        "pollster": "Respons",
+        "parties": {
+          "Ap": 25.8,
+          "H": 20.5,
+          "Sp": 13.7,
+          "FrP": 11.5,
+          "SV": 7.7,
+          "R": 4.6,
+          "V": 4.4,
+          "MDG": 4,
+          "KrF": 3.8
+        }
+      },
+      {
+        "date": "2021-09-01",
+        "pollster": "Kantar",
+        "parties": {
+          "Ap": 26.3,
+          "H": 20.2,
+          "Sp": 13.4,
+          "FrP": 11.7,
+          "SV": 7.8,
+          "R": 4.7,
+          "V": 4.5,
+          "MDG": 3.9,
+          "KrF": 3.6
+        }
+      },
+      {
+        "date": "2021-08-25",
+        "pollster": "Norstat",
+        "parties": {
+          "Ap": 25.9,
+          "H": 20.3,
+          "Sp": 14.1,
+          "FrP": 11.4,
+          "SV": 8,
+          "R": 4.4,
+          "V": 4.2,
+          "MDG": 4.2,
+          "KrF": 3.8
+        }
+      }
+    ]
+  }
+}

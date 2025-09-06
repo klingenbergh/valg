@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norwegian Elections - Historical Data & Polls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Norwegian Parliament Elections</h1>
+      <p>Historical election results and opinion polls</p>
+    </header>
+
+    <div class="controls">
+      <button id="nextYearBtn" class="year-nav-btn">← <span id="nextYearText"></span></button>
+      
+      <div class="year-selector">
+        <select id="yearSelect">
+          <option value="2021">2021</option>
+          <option value="2017">2017</option>
+          <option value="2013">2013</option>
+          <option value="2009">2009</option>
+        </select>
+      </div>
+      
+      <button id="prevYearBtn" class="year-nav-btn"><span id="prevYearText"></span> →</button>
+    </div>
+
+    <div class="content">
+      <section class="results-section">
+        <h2>Election Results</h2>
+        <div id="resultsChart" class="chart"></div>
+        <div id="resultsTable" class="data-table"></div>
+      </section>
+
+      <section class="polls-section">
+        <h2>Opinion Polls Timeline</h2>
+        
+        <div class="poll-filters">
+          <div class="filter-group">
+            <label for="pollsterFilter">Pollster:</label>
+            <select id="pollsterFilter">
+              <option value="">All Pollsters</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="yearFilter">Year:</label>
+            <select id="yearFilter">
+              <option value="">All Years</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="filter-info" id="filterInfo"></div>
+        
+        <div class="carousel-container">
+          <button class="carousel-btn carousel-prev" id="prevBtn">❮</button>
+          <div id="pollsList" class="polls-carousel"></div>
+          <button class="carousel-btn carousel-next" id="nextBtn">❯</button>
+        </div>
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Data sources: Statistics Norway (SSB), Wikipedia</p>
+      <p>Note: Poll data availability varies by year</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

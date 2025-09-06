@@ -1,0 +1,15 @@
+{
+  "year": 2021,
+  "source": "sample",
+  "rows": [
+    { "partyId": "ap", "pct": 26.3, "seats": 48 },
+    { "partyId": "h", "pct": 20.5, "seats": 36 },
+    { "partyId": "frp", "pct": 11.6, "seats": 21 },
+    { "partyId": "sv", "pct": 7.6, "seats": 13 },
+    { "partyId": "sp", "pct": 13.5, "seats": 28 },
+    { "partyId": "v", "pct": 4.5, "seats": 8 },
+    { "partyId": "krf", "pct": 3.8, "seats": 3 },
+    { "partyId": "mdg", "pct": 3.9, "seats": 3 },
+    { "partyId": "r", "pct": 4.7, "seats": 8 }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "2009": [
+    { "year": 2009, "name": "Rödgrön", "partyIds": ["ap", "sv", "sp", "r", "mdg"] },
+    { "year": 2009, "name": "Borgerlig", "partyIds": ["h", "frp", "v", "krf"] }
+  ],
+  "2013": [
+    { "year": 2013, "name": "Rödgrön", "partyIds": ["ap", "sv", "sp", "r", "mdg"] },
+    { "year": 2013, "name": "Borgerlig", "partyIds": ["h", "frp", "v", "krf"] }
+  ],
+  "2017": [
+    { "year": 2017, "name": "Rödgrön", "partyIds": ["ap", "sv", "sp", "r", "mdg"] },
+    { "year": 2017, "name": "Borgerlig", "partyIds": ["h", "frp", "v", "krf"] }
+  ],
+  "2021": [
+    { "year": 2021, "name": "Rödgrön", "partyIds": ["ap", "sv", "sp", "r", "mdg"] },
+    { "year": 2021, "name": "Borgerlig", "partyIds": ["h", "frp", "v", "krf"] }
+  ]
+}
